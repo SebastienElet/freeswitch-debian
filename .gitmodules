@@ -1,0 +1,4 @@
+[submodule "src"]
+	path = src
+	url = git://git.freeswitch.org/freeswitch.git
+	branch = v1.2.stable
