@@ -4,3 +4,5 @@ set -x
 
 cd src/debian
 ./bootstrap.sh
+cd ..
+dpkg-buildpackage -b
