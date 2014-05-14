@@ -5,4 +5,18 @@ set -x
 cd src/debian
 ./bootstrap.sh
 cd ..
+apt-get update -qq
+apt-get install --no-install-recommends -y \
+  unixodbc-dev \
+  doxygen \
+  uuid-dev \
+  libdb-dev \
+  ladspa-sdk \
+  libogg-dev \
+  libasound2-dev \
+  libsnmp-dev \
+  libvorbis-dev \
+  libflac-dev \
+  libvlc-dev \
+  libperl-dev
 dpkg-buildpackage -b
