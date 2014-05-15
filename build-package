@@ -20,4 +20,5 @@ apt-get install --no-install-recommends -y \
   libvlc-dev \
   libperl-dev > /dev/null
 dpkg-buildpackage -b | grep -i error
+cd ..
 ls -lah
