@@ -18,5 +18,6 @@ apt-get install --no-install-recommends -y \
   libvorbis-dev \
   libflac-dev \
   libvlc-dev \
-  libperl-dev
-dpkg-buildpackage -b
+  libperl-dev > /dev/null
+dpkg-buildpackage -b | grep -i error
+ls -lah
