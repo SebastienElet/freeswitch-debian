@@ -48,7 +48,8 @@ update-gh: build-repo
 	cd $(HOME)/gh-pages && git push -fv origin gh-pages	
 
 install:
+	sleep 20
 	echo 'deb http://nasga.github.io/freeswitch-debian/debian/ wheezy main \
-		| sudo tee /etc/apt/sources.list.d/sample-pkg-debian.list
+		| sudo tee /etc/apt/sources.list.d/freeswitch-debian.list
 	sudo apt-get update -qq
 	sudo apt-get install -qq --force-yes freeswitch
