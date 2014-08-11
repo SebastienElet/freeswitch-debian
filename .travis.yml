@@ -1,1 +1,4 @@
+env:
+  global:
+    - secure: "CLKfvygvTihlBNzI++OLR4ug/+Nm9X4oMKdcGWh++32O7Drsyx0qnGyTpZn9J1qEo/HNYDOzy2zhXg63+lTTGywVu4mudIk28Ca57xCLoplHsgL8QNj2OFqyjpFLUKSy2p6H3IDRhPFQAGWL15OpJDYpeuGbqoCiwBzqgQpnh5I="
 script: make all

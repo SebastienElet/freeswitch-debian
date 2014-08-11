@@ -31,6 +31,7 @@ prepare-gh:
 	@git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/Nasga/freeswitch-debian.git $(HOME)/gh-pages > /dev/null
 
 build-repo: prepare-gh
+	sudo apt-get install -qq -y reprepro
 	if [ ! -d "$(HOME)/gh-pages/debian" ]; then \
 		mkdir -p $(HOME)/gh-pages/debian/conf \
 		echo 'Origin: Freeswitch packages' >> $(HOME)/gh-pages/debian/conf/distributions \
