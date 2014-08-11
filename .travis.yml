@@ -1,1 +1,1 @@
-script: sudo -E ./build-package
+script: make all
